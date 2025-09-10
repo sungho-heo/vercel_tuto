@@ -1,22 +1,17 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Slider } from "./slider.tsx";
+import slideJson from "./image.json";
 
-import "swiper/css";
+type Slide = {
+  image: string;
+  title: string;
+  subTitle: string;
+  interval: number;
+};
 
+const slides: Slide[] = slideJson;
 // App
 function App() {
-  return (
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
-  );
+  return <Slider slides={slides} />;
 }
 
 export default App;
