@@ -1,14 +1,15 @@
+import "./App.css";
 import { Slider } from "./slider.tsx";
 import slideJson from "./image.json";
 
-type Slide = {
+export type SlideType = {
   image: string;
   title: string;
   subTitle: string;
   interval: number;
 };
 
-const slides: Slide[] = slideJson;
+const slides: SlideType[] = slideJson;
 // App
 function App() {
   return <Slider slides={slides} />;
