@@ -1,3 +1,29 @@
 img {
   width: 100%;
 }
+
+.app {
+  font-family: sans-serif;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#home {
+  background: #74c0fc;
+}
+#about {
+  background: #ffd43b;
+}
+#projects {
+  background: #69db7c;
+}
+#contact {
+  background: #ff6b6b;
+}
