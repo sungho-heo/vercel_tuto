@@ -29,10 +29,9 @@ export default function Remocon({ slides, swiper }: RemoconProps) {
           style={{
             width: "50px",
             height: "50px",
-            borderRadius: "50%",
             border: "2px solid #333",
-            background: "#fff",
-            color: "#333",
+            background: "#52ef67ff",
+            color: "blue",
             fontWeight: "bold",
             cursor: "pointer",
           }}
